@@ -48,12 +48,19 @@ body {
 .main__container {
   padding: 50px;
 }
+
 .contact {
   font-style: normal;
 }
+
 .link {
   color: inherit;
 }
+
+.box50 {
+  width: 48%;
+}
+
 .contacts-container > div:not(:last-child) {
   margin-bottom: 10px;
 }
