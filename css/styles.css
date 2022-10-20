@@ -1,313 +1,251 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(100%);
-  margin: -1px;
-  font-size: 0;
-}
-
 body {
-  font-family: Montserrat, sans-serif;
-  background-color: #f4f6f9;
-  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f7fa;
 }
 
-.wrapper {
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1200px;
   background-color: #fff;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
-  min-width: 700px;
+  margin: 40px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar {
-  background-color: #1e2939;
-  width: 260px;
-  padding: 100px 0;
+/* main content section */
+
+.main-content-section {
+  padding: 50px 50px;
 }
 
-.my-photo {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.main__container {
-  padding: 50px;
-}
-
-.contact {
-  font-style: normal;
-}
-
-.link {
-  color: inherit;
-}
-
-.box50 {
-  width: 48%;
-}
-
-.contacts-container > div:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.contacts-container {
-  margin: 60px 40px 0 40px;
-  font-style: normal;
-}
-
-.contact:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.contacts-link {
-  display: block;
-  opacity: 0.5;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  text-decoration: underline;
-  width: 100%;
-}
-
-.contacts-link-type {
-  width: 14px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding-right: 10px;
-  width: 100%;
-}
-
-.aside-container {
-  margin: 55px 40px 0 40px;
-}
-
-.aside__item {
-  color: #ff6b08;
-  font-size: 16px;
-  margin-left: 15px;
-  line-height: 24px;
-}
-
-.skill__item {
-  color: #ff6b08;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.aside__item-color {
-  color: #ffffff;
-}
-
-.work__item-content,
-.skill__item-color {
-  color: #000000;
-}
-
-.position {
-  color: #ff6b08;
+.main-content-title {
+  font-weight: bold;
   font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 10px;
+  line-height: 27px;
+  color: #000;
 }
 
-.name {
-  color: #000000;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.5em;
+/* about me section */
+
+.about-me-section {
+  margin: 0 0 40px 0;
 }
 
-.description {
-  color: #595959;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  margin-top: 20px;
-}
-
-.description span{
-  display: block;
-  line-height: 28px;
-}
-
-.section {
-  margin-bottom: 40px;
-}
-
-.sidebar .section__title {
-  color: #ffffff;
-}
-
-.section__title {
-  color: #000000;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 15px;
-}
-
-.project-list__item {
-  color: #ff6b08;
-}
-
-.project-list__item span {
-  color: #000000;
-}
-
-.project-list__item:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.project-list__link {
-  color: #000000;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.project-list__about {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-.project-list__tech {
-  font-family: 'Montserrat - Regular';
-  font-size: 16px;
-  line-height: 24px;
-  color: #595959;
-}
-
-.work__company {
-  font-weight: 700;
-  color: #000000;
-}
-
-.data {
-  color: #a8a8a8;
+.about-me-profession {
+  font-weight: bold;
   font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin: 0 0 20px 0;
+}
+
+.about-me-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 55px;
+  color: #000;
+  margin: 0 0 25px 0;
+}
+
+.about-me-description {
+  font-style: normal;
   font-weight: normal;
-}
-
-.separator {
-  color: #ff6b08;
-  font-weight: 700;
-}
-
-.work__position-task {
-  color: #595959;
   font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
-  margin-left: 17px;
+  color: #595959;
 }
 
-.work__description,
-.work__position,
-.specialty {
-  color: #000000;
+.my-projects-section {
+  margin: 0 0 50px 0;
+}
+.my-projects-list {
+  padding: 0 0 0 17px;
+}
+
+.my-projects-item {
+  color: #000;
+  font-weight: bold;
+}
+
+.my-projects-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.my-projects-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  margin-left: 5px;
+}
+.my-projects-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  margin-left: -18px;
+}
+
+/* my work experience */
+
+.my-work-experience-section {
+  margin-bottom: 10px;
+}
+
+.my-work-experience-company {
+  color: #fb6d3a;
+}
+
+.my-work-experience-position {
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 10px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
 }
 
-.work {
-  /* margin-bottom: 20px; */
+.my-work-experience-period {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin: 0 0 10px 0;
 }
 
-.work__description {
-  color: #595959;
-  margin-bottom: 10px;
-  font-weight: 400;
+.my-work-experience-duties {
+  padding: 0 0 0 18px;
 }
 
-.work__list{
-  padding-left: 16px;
-  margin-bottom: 16px;
-}
-
-.work__item {
-  color: #ff6b08;
+.my-work-experience-duty {
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  margin-bottom: 6px;
-}
-
-.work__item-content {
+  line-height: 24px;
   color: #595959;
 }
 
-.university {
+.my-work-experience-company-block {
+  margin: 0 15px 0 0;
+}
+
+/* my education */
+
+.my-education-company-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+  color: #fb6d3a;
+}
+
+.my-education-item {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.my-study-period {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin: 0 0 20px 0;
+}
+
+/* sidebar-section */
+
+.sidebar-section {
+  background-color: #1e2939;
+  width: 370px;
+  padding: 40px 0;
+}
+
+.contacts-section,
+.tech-skills-section,
+.soft-skills-section,
+.socials-section {
+  margin: 50px 0 0 40px;
+}
+
+.sidebar-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #fff;
   margin-bottom: 10px;
 }
 
-.work,
-.education__item {
-  color: #ff6b08;
+/* contacts section */
+
+.contacts-section-type {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  margin-right: 7px;
 }
 
-.education__item:not(:last-child) {
-  margin-bottom: 20px;
+.contacts-section-link {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.skils__wraper {
-  display: flex;
-  justify-content: space-between;
+/* tech skills section */
+
+.tech-skills-list {
+  padding: 0 0 0 17px;
 }
 
-.skill__list {
-  display: inline-block;
-  width: 45%;
-  padding: 5px 10px;
+.tech-skills-item,
+.soft-skills-item,
+.social-item {
+  color: #fb6d3a;
 }
 
-.description__work {
-  margin: 0 0 15px;
+.tech-skills-item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
 }
 
-@media print {
-  body {
-    padding: 0 0 0 30px;
-    width: 1000px;
-    height: 1414px;
-  }
+/* soft skills section */
 
-  body * {
-    color: #000 !important;
-  }
+.soft-skills-list,
+.social-section-list {
+  padding: 0 0 0 17px;
+}
 
-  .main__container {
-    /* padding: 0 10px; */
-  }
+.soft-skills-item-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+}
+/* socials section */
 
-  .social,
-  .projects {
-    display: none;
-  }
-
-  .contacts-container,
-  .aside-container {
-    margin-left: 5px;
-  }
+.socials-section {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
 }
